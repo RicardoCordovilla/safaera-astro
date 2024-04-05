@@ -21,8 +21,9 @@ import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
 import axios from 'axios';
 
-import pkg from 'primereact/button';
-const { Button } = pkg;
+import * as BtnPrime from "primereact/button";
+const { Button } = BtnPrime;
+export { Button };
 
 
 
