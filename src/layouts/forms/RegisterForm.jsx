@@ -3,9 +3,11 @@ import "primereact/resources/themes/viva-dark/theme.css"
 import 'primeicons/primeicons.css';
 import Swal from 'sweetalert2'
 import { format } from "@formkit/tempo"
+
 import { Card } from 'primereact/card';
-import { Button } from 'primereact/button';
+// import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
+
 import NameField from './components/NameField';
 import CedulaField from './components/CedulaField';
 import CumpleField from './components/CumpleField';
@@ -17,10 +19,13 @@ import NotesField from './components/NotesField';
 // import useFetch from '../../utils/useFetch';
 import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
-// import * as CardPrime from "primereact/card";
-// import pkg from 'primereact/card/card.esm.js';
-// const { Card } = CardPrime;
 import axios from 'axios';
+
+import pkg from 'primereact/button';
+const { Button } = pkg;
+
+
+
 
 
 const RegisterForm = () => {
