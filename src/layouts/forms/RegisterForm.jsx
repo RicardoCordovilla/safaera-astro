@@ -6,7 +6,7 @@ import { format } from "@formkit/tempo"
 
 // import { Card } from 'primereact/card';
 // import { Button } from 'primereact/button';
-import { Dialog } from 'primereact/dialog';
+// import { Dialog } from 'primereact/dialog';
 
 import NameField from './components/NameField';
 import CedulaField from './components/CedulaField';
@@ -29,9 +29,9 @@ import * as CardPrime from "primereact/card";
 const { Card } = CardPrime;
 export { Card };
 
-// import * as DlgPrime from "primereact/card";
-// const { Dialog } = DlgPrime;
-// export { Dialog };
+import * as DlgPrime from "primereact/dialog";
+const { Dialog } = DlgPrime;
+export { Dialog };
 
 
 
