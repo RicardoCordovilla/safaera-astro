@@ -1,0 +1,50 @@
+.imagesContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -10;
+    background-color:"#15172b";
+
+}
+
+.imagesTransition {
+    /* width: 200px; */
+    /* height: 200px; */
+    background: red;
+    -webkit-animation: fadeinout 3s linear infinite;
+    animation: fadeinout 3s linear infinite;
+}
+
+@-webkit-keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.image {
+    width: 100%;
+}

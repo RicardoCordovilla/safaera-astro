@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+import "../styles/discoteca.css";
+import { API_METHODS } from "../utils/configs";
+const response = await fetch(API_METHODS.configs.getConfigs.url);
+const data = await response.json();
+const wts = data[0]?.data?.wts;
+console.log(data[0]);
+const wtss = "593" + wts.substring(1, 12);
+const drive1 = data[0]?.data?.drive1;
+console.log(drive1);
+---
+
+<BaseLayout>
+    <header>
+        <nav class="navbar">
+            <a
+                href="index.html"
+                class="navbarBtn_back"
+                rel="noopener noreferrer nofollow"
+            >
+                <i class="bx bx-arrow-back"></i>
+            </a>
+        </nav>
+
+        <figure class="figura" id="logohead">
+            <img src="/images/KARAOKE-PARTY-2024.webp" alt="" class="logo" />
+        </figure>
+
+        <section class="descripcion">
+            <p>
+                Reserva tu mesa para cualquier ocasión especial escribiéndonos
+                al WhatsApp
+            </p>
+            <a
+                href={`https://wa.me/${wtss}?text=Hola,%20quisiera%20reservar%20una%20mesa%20para%20una%20ocasión%20especial.`}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                class="link"
+            >
+                <p class="whatsappP">
+                    <img
+                        src="/images/logos/whatsapp.webp"
+                        alt=""
+                        class=""
+                        style="width: 5rem; height: 5rem; margin-right: 1rem; "
+                    />
+                    <span class="numberWts">
+                        {wts}
+                    </span>
+                </p>
+            </a>
+        </section>
+    </header>
+
+    <main>
+        <section>
+            <p class="linkMenu">
+                <a
+                    href={drive1}
+                    class="link"
+                    rel="noopener noreferrer nofollow"
+                    target="_blank"
+                >
+                    CONOCE NUESTRO MENÚ (referencial)
+                </a>
+            </p>
+        </section>
+
+        <br /><br /><br /><br /><br />
+    </main>
+</BaseLayout>

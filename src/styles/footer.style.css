@@ -1,0 +1,10 @@
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-cyan2);
+    text-shadow: none;
+    opacity: 0.8;
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+}

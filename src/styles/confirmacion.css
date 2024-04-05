@@ -1,0 +1,14 @@
+.seccion_confirmacion {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    /* background-color: aqua; */
+    margin-top: -1rem;
+}
+
+.img_confirmacion {
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+}

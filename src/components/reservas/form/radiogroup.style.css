@@ -1,0 +1,61 @@
+.hourBx {
+    height: 28vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-inputbox);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.hidebx {
+    display: none;
+}
+
+.hourBx::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+span {
+    text-shadow: none;
+}
+
+.hourBx::-webkit-scrollbar-thumb {
+    background-color: var(--color-cyan);
+    border-radius: 0.5rem;
+}
+
+/* customRadio style */
+/* 
+            style={{
+                backgroundColor: selectedHour === hora ? '#007bff' : 'white',
+                color: selectedHour === hora ? 'white' : 'black',
+                padding: '10px',
+                borderRadius: '5px',
+                cursor: 'pointer',
+                margin: '5px',
+                border: selectedHour === hora ? '1px solid #007bff' : '1px solid #007bff',
+            }}
+ */
+
+ .customRadio {
+    background-color: var(--color-inputbox);
+    color: var(--color-blanco);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid var(--color-cyan);    
+    transition: all 0.3s;
+}
+
+.selected {
+    background-color: var(--color-cyan);
+    color: var(--color-inputbox);
+    font-weight: bold;
+    border: 1px solid var(--color-cyan);
+    transition: all 0.3s;
+}   
+

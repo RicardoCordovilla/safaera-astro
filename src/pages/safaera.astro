@@ -1,0 +1,34 @@
+---
+import RegisterForm from "../layouts/forms/RegisterForm";
+import "../styles/global.css";
+import "../styles/global.css";
+import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
+// import "primereact/resources/themes/md-dark-indigo/theme.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ImagesTransition from "../components/reservas/form/ImagesTransition.jsx";
+import '../styles/safaera.css'
+---
+
+<BaseLayout>
+    <nav class="navbar">
+        <a href="index.html" class="navbarBtn_back" rel="noopener noreferrer nofollow">
+            <i class="bx bx-arrow-back"></i>
+        </a>
+    </nav>
+
+    <ImagesTransition client:visible={true} />
+    <header>
+        <figure class="figura" id="logohead">
+            <img src="/images/logos/safaera_logo.png" alt="" class="logo" />
+        </figure>
+    </header>
+
+    <div class="descripcion">
+        <p>Vive la mejor experiencia de entretenimiento en Quito</p>
+        <p>Av. La República y Mañosca, Plaza Mayor</p>
+        <p>
+            <strong>SEGUNDO PISO</strong>
+        </p>
+    </div>
+    <RegisterForm client:visible={true} />
+</BaseLayout>
