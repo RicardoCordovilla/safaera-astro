@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/netlify": "^5.2.0",
     "@astrojs/react": "^3.1.0",
     "@formkit/tempo": "^0.0.19",
     "@types/react": "^18.2.73",
