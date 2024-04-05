@@ -16,7 +16,10 @@ import NotesField from './components/NotesField';
 // import useFetch from '../../utils/useFetch';
 import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
-import { Button } from 'primereact/button';
+import * as BtnPrime from "primereact/button";
+const { Button } = BtnPrime;
+export { Button };
+// import { Button } from 'primereact/button';
 import axios from 'axios';
 
 
