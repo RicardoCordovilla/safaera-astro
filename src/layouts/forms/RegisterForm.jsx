@@ -4,7 +4,7 @@ import 'primeicons/primeicons.css';
 import Swal from 'sweetalert2'
 import { format } from "@formkit/tempo"
 
-import { Card } from 'primereact/card';
+// import { Card } from 'primereact/card';
 // import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
 
@@ -25,7 +25,13 @@ import * as BtnPrime from "primereact/button";
 const { Button } = BtnPrime;
 export { Button };
 
+import * as CardPrime from "primereact/card";
+const { Card } = CardPrime;
+export { Card };
 
+// import * as DlgPrime from "primereact/card";
+// const { Dialog } = DlgPrime;
+// export { Dialog };
 
 
 
