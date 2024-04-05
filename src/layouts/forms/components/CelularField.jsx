@@ -1,5 +1,14 @@
-import { FloatLabel } from 'primereact/floatlabel'
-import { InputText } from 'primereact/inputtext'
+// import { FloatLabel } from 'primereact/floatlabel'
+// import { InputText } from 'primereact/inputtext'
+
+import * as InpTxt from "primereact/inputtext";
+const { InputText } = InpTxt;
+export { InputText };
+
+import * as FltLbl from "primereact/floatlabel";
+const { FloatLabel } = FltLbl;
+export { FloatLabel };
+
 
 const CelularField = ({ celular, setCelular }) => {
     return (

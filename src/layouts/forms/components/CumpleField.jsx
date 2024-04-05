@@ -1,4 +1,8 @@
-import { ToggleButton } from 'primereact/togglebutton'
+// import { ToggleButton } from 'primereact/togglebutton'
+
+import * as TglBtn from "primereact/togglebutton";
+const { ToggleButton } = TglBtn;
+export { ToggleButton };
 
 const CumpleField = ({ cumple, setCumple }) => {
     return (
