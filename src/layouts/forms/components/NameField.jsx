@@ -1,8 +1,5 @@
-// import { FloatLabel } from 'primereact/floatlabel'
-// import { InputText } from 'primereact/inputtext'
-import * as BtnPrime from "primereact/button";
-const { FloatLabel, InputText } = BtnPrime;
-export { FloatLabel };
+import { FloatLabel } from 'primereact/floatlabel'
+import { InputText } from 'primereact/inputtext'
 
 const NameField = ({ nombre, setNombre }) => {
     return (

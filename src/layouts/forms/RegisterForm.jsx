@@ -4,6 +4,7 @@ import 'primeicons/primeicons.css';
 import Swal from 'sweetalert2'
 import { format } from "@formkit/tempo"
 import { Card } from 'primereact/card';
+import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
 import NameField from './components/NameField';
 import CedulaField from './components/CedulaField';
@@ -16,10 +17,9 @@ import NotesField from './components/NotesField';
 // import useFetch from '../../utils/useFetch';
 import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
-import * as BtnPrime from "primereact/button";
-const { Button } = BtnPrime;
-export { Button, Card, Dialog};
-// import { Button } from 'primereact/button';
+// import * as CardPrime from "primereact/card";
+// import pkg from 'primereact/card/card.esm.js';
+// const { Card } = CardPrime;
 import axios from 'axios';
 
 

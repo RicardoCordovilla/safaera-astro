@@ -37,8 +37,8 @@ const ImagesTransition = () => {
         const response = data && data[0].data
         if (!data) return
         // setImages(response?.images.form)
-        setImages(formatImages(response?.images.form))
-        console.log(images)
+        setImages(formatImages(response?.images?.form))
+        // console.log(images)
     }, [data])
 
     const transitionImages = () => {
