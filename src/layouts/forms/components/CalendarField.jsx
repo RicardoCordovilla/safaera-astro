@@ -1,9 +1,15 @@
 import { Calendar } from "primereact/calendar"
+
 import { addLocale } from 'primereact/api';
 import { useEffect, useState } from "react";
 import axios from "axios";
 import useFetch from "../../../utils/useFetch";
 import { API_METHODS } from "../../../utils/configs";
+
+import * as CldrPrime from "primereact/calendar";
+const { Calendar } = BtnPrime;
+export { Calendar };
+
 
 const CalendarField = ({ fecha, setFecha }) => {
 
