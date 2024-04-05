@@ -18,7 +18,7 @@ import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
 import * as BtnPrime from "primereact/button";
 const { Button } = BtnPrime;
-export { Button };
+export { Button, Card, Dialog};
 // import { Button } from 'primereact/button';
 import axios from 'axios';
 
