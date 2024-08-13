@@ -158,10 +158,10 @@ const RegisterForm = () => {
                         setPersonas={setPersonas}
                     />
 
-                    <CalendarField
+                    {/* <CalendarField
                         fecha={fecha}
                         setFecha={setFecha}
-                    />
+                    /> */}
 
                     <HoraField
                         hora={hora}
