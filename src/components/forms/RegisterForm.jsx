@@ -183,24 +183,6 @@ const RegisterForm = () => {
 
             </div>
 
-            <Dialog
-                // open={showDialog}
-                visible={showDialog}
-                style={{
-                    width: '100%',
-                    height: '100%',
-                    backgroundColor: '#fff',
-                    // zIndex: '-1',
-                }}
-                position='top'
-                modal
-                onHide={() => setShowDialog(false)}>
-
-                <Ticket
-                    data={data}
-                    setShowDialog={setShowDialog}
-                />
-            </Dialog>
 
 
         </Card >
