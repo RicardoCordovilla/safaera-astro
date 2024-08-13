@@ -141,7 +141,7 @@ const RegisterForm = () => {
                     setNombre={setNombre}
                 />
 
-                <CedulaField
+                {/* <CedulaField
                     cedula={cedula}
                     setCedula={setCedula}
                 />
@@ -158,12 +158,12 @@ const RegisterForm = () => {
                 <PersonaField
                     personas={personas}
                     setPersonas={setPersonas}
-                />
+                /> */}
 
-                <CalendarField
+                {/* <CalendarField
                     fecha={fecha}
                     setFecha={setFecha}
-                />
+                /> */}
 
                 {/* <HoraField
                     hora={hora}
@@ -171,18 +171,18 @@ const RegisterForm = () => {
                     horas={horas}
                 /> */}
 
-                <NotesField
+                {/* <NotesField
                     notes={notes}
                     setNotes={setNotes}
-                />
+                /> */}
 
 
-                <Button label="Generar ticket" className="p-button-lg"
+                {/* <Button label="Generar ticket" className="p-button-lg"
                     style={{ width: '100%' }}
                     severity='success'
                     onClick={handleTicket}
                     type='submit'
-                />
+                /> */}
 
             </div>
 
