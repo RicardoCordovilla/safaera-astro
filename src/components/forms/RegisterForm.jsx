@@ -136,10 +136,10 @@ const RegisterForm = () => {
                 style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}
             >
 
-                <NameField
+                {/* <NameField
                     nombre={nombre}
                     setNombre={setNombre}
-                />
+                /> */}
 
                 {/* <CedulaField
                     cedula={cedula}
@@ -160,10 +160,10 @@ const RegisterForm = () => {
                     setPersonas={setPersonas}
                 /> */}
 
-                {/* <CalendarField
+                <CalendarField
                     fecha={fecha}
                     setFecha={setFecha}
-                /> */}
+                />
 
                 {/* <HoraField
                     hora={hora}
