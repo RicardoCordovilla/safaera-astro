@@ -6,29 +6,29 @@ import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
 import RegisterForm from "../components/forms/RegisterForm.jsx";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ImagesTransition from "../components/reservas/form/ImagesTransition.jsx";
-import '../styles/safaera.css'
+import "../styles/safaera.css";
 ---
 
 <BaseLayout>
-    <nav class="navbar">
-        <a href="/" class="navbarBtn_back" rel="noopener noreferrer nofollow">
-            <i class="bx bx-arrow-back"></i>
-        </a>
-    </nav>
+  <nav class="navbar">
+    <a href="/" class="navbarBtn_back" rel="noopener noreferrer nofollow">
+      <i class="bx bx-arrow-back"></i>
+    </a>
+  </nav>
 
-    <!-- <ImagesTransition client:visible={true} /> -->
-    <header>
-        <figure class="figura" id="logohead">
-            <img src="/images/logos/safaera_logo.png" alt="" class="logo" />
-        </figure>
-    </header>
+  <!-- <ImagesTransition client:visible={true} /> -->
+  <header>
+    <figure class="figura" id="logohead">
+      <img src="/images/logos/safaera_logo.png" alt="" class="logo" />
+    </figure>
+  </header>
 
-    <div class="descripcion">
-        <p>Vive la mejor experiencia de entretenimiento en Quito</p>
-        <p>Av. La República y Mañosca, Plaza Mayor</p>
-        <p>
-            <strong>SEGUNDO PISO</strong>
-        </p>
-    </div>
-    <RegisterForm client:visible={true} />
+  <div class="descripcion">
+    <p>Vive la mejor experiencia de entretenimiento en Quito</p>
+    <p>Av. La República y Mañosca, Plaza Mayor</p>
+    <p>
+      <strong>SEGUNDO PISO</strong>
+    </p>
+  </div>
+  <RegisterForm client:load />
 </BaseLayout>

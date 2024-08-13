@@ -5,7 +5,9 @@ import netlify from "@astrojs/netlify";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react()],
+  integrations: [react({
+    include: ['**/react/*'],
+  }),],
   prefetch: true,
   output: 'server',
   adapter: netlify(),
