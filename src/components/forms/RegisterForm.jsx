@@ -19,6 +19,7 @@ import NotesField from './components/NotesField';
 import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
 import axios from 'axios';
+import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
 
 const RegisterForm = () => {
     const defaultSelectedHour = 4
@@ -71,81 +72,6 @@ const RegisterForm = () => {
     useEffect(() => {
         getHoras()
     }, [])
-
-
-    // const formik = useFormik({
-    //     initialValues: {
-    //         nombre: '',
-    //         cedula: '',
-    //         // celular: '',
-    //         cumple: false,
-    //         // personas: 2,
-    //         // fecha: '',
-    //         // hora: horas[defaultSelectedHour],
-    //         // notes: ''
-    //     },
-    //     validate: (data) => {
-    //         let errors = {}
-    //         !data.nombre && (errors.nombre = 'Completar el nombre')
-    //         !data.cedula && (errors.cedula = 'Cédula 10 dígitos min')
-    //         // if (!data.celular) {
-    //         //     errors.celular = 'Completar el celular'
-    //         // }
-    //         // if (!data.fecha) {
-    //         //     errors.fecha = 'Seleccionar una fecha'
-    //         // }
-    //         // if (!data.personas) {
-    //         //     errors.personas = 'Min 2 personas'
-    //         // }
-
-    //         return errors
-    //     },
-
-    //     onSubmit: (data) => {
-    //         // setNombre(data.nombre)
-    //         setSubmitting(true)
-    //         if (!formik.errors.nombre
-    //             && !formik.errors.cedula
-    //             // && !formik.errors.celular
-    //             // && !formik.errors.fecha
-    //             // && !formik.errors.personas
-    //         ) {
-    //             console.log('onSubmit', data)
-    //             // setShowDialog(true)
-    //             // formik.resetForm()
-    //             setSubmitting(false)
-    //         }
-    //     }
-    // })
-
-    const isFormFieldInvalid = (name) => {
-
-    }
-    // !!(formik.touched[name] && formik.errors[name])
-
-    const getFormErrorMessage = (name) => {
-        return isFormFieldInvalid(name) &&
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'left',
-                }}
-            >
-                <small className="p-error"
-                    style={{
-                        position: 'relative',
-                        // left: '0.2rem',
-                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                        alignSelf: 'left',
-                        justifySelf: 'left',
-                        padding: '0.2rem 0.5rem',
-                        borderRadius: '0 0 0.3rem 0.3rem',
-                        textShadow: 'none'
-
-                    }}
-                >{formik.errors[name]}</small>
-            </div>
-    }
 
 
     const handleTicket = () => {
