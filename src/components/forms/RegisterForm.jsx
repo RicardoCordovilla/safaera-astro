@@ -4,7 +4,7 @@ import 'primeicons/primeicons.css';
 import Swal from 'sweetalert2'
 import { format } from "@formkit/tempo"
 
-import { Card } from 'primereact/card';
+// import { Card } from 'primereact/card';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
 
@@ -121,72 +121,73 @@ const RegisterForm = () => {
 
     return (
 
-        <div>
-            <Card title="Reserva" subTitle="Completa este formulario"
-                style={{
-                    width: '80%', margin: 'auto',
-                    borderRadius: '1rem', boxShadow: '0 0 1rem 0.5rem rgba(200, 200, 200, 0.5)',
-                    marginTop: '1.5em',
-                    marginBottom: '4 em',
-                }}
+        <div
+            style={{
+                width: '80%', margin: 'auto',
+                borderRadius: '1rem', boxShadow: '0 0 1rem 0.5rem rgba(200, 200, 200, 0.5)',
+                marginTop: '1.5em',
+                marginBottom: '4 em',
+                backgroundColor: 'rgba(44, 42, 42, 0.747)',
+                padding: '2rem',
+            }}
+
+        >
+            <div
+                style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}
             >
-                <div
-                    style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}
-                >
 
-                    <NameField
-                        nombre={nombre}
-                        setNombre={setNombre}
-                    />
+                <NameField
+                    nombre={nombre}
+                    setNombre={setNombre}
+                />
 
-                    <CedulaField
-                        cedula={cedula}
-                        setCedula={setCedula}
-                    />
-                    <CumpleField
-                        cumple={cumple}
-                        setCumple={setCumple}
-                    />
+                <CedulaField
+                    cedula={cedula}
+                    setCedula={setCedula}
+                />
+                <CumpleField
+                    cumple={cumple}
+                    setCumple={setCumple}
+                />
 
-                    <CelularField
-                        celular={celular}
-                        setCelular={setCelular}
-                    />
+                <CelularField
+                    celular={celular}
+                    setCelular={setCelular}
+                />
 
-                    <PersonaField
-                        personas={personas}
-                        setPersonas={setPersonas}
-                    />
+                <PersonaField
+                    personas={personas}
+                    setPersonas={setPersonas}
+                />
 
-                    {/* <CalendarField
-                        fecha={fecha}
-                        setFecha={setFecha}
-                    /> */}
+                <CalendarField
+                    fecha={fecha}
+                    setFecha={setFecha}
+                />
 
-                    <HoraField
-                        hora={hora}
-                        setHora={setHora}
-                        horas={horas}
-                    />
+                <HoraField
+                    hora={hora}
+                    setHora={setHora}
+                    horas={horas}
+                />
 
-                    <NotesField
-                        notes={notes}
-                        setNotes={setNotes}
-                    />
+                <NotesField
+                    notes={notes}
+                    setNotes={setNotes}
+                />
 
 
-                    <Button label="Generar ticket" className="p-button-lg"
-                        style={{ width: '100%' }}
-                        severity='success'
-                        onClick={handleTicket}
-                        type='submit'
-                    />
+                <Button label="Generar ticket" className="p-button-lg"
+                    style={{ width: '100%' }}
+                    severity='success'
+                    onClick={handleTicket}
+                    type='submit'
+                />
 
-                </div>
+            </div>
 
 
 
-            </Card >
 
 
             <Dialog
