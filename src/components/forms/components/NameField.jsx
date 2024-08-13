@@ -24,7 +24,7 @@ const NameField = ({ nombre, setNombre }) => {
                     type='text'
                     required
                 />
-                <label htmlFor="nombre">Nombre</label>
+                <label htmlFor="nombre">Nombre y Apellido:</label>
             </FloatLabel>
             {/* {getFormErrorMessage('nombre')} */}
         </div>

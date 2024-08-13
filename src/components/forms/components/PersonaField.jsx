@@ -10,13 +10,13 @@ const { FloatLabel } = FltLbl;
 export { FloatLabel };
 
 
-const PersonaField = ({ personas, setPersona }) => {
+const PersonaField = ({ personas, setPersonas }) => {
     return (
         <div className="flex justify-content-center">
             <FloatLabel>
                 <InputText id="personas"
                     style={{ width: '100%' }}
-                    onChange={(e) => setPersona(e.target.value)}
+                    onChange={(e) => setPersonas(e.target.value)}
                     keyfilter={/[0-9]+$/}
                     value={personas}
                     name='personas'

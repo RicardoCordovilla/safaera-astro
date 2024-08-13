@@ -20,7 +20,7 @@ const CalendarField = ({ fecha, setFecha }) => {
 
     const [data, loding, error, fetch] = useFetch()
     // const [disabledDays, setDisabledDays] = useState([])
-    const [enabledDays, setEnabledDays] = useState([])
+    const [enabledDays, setEnabledDays] = useState([4,5,6])
     const [enabledDates, setEnabledDates] = useState([])
     const [disabledDates, setDisabledDates] = useState([])
 
@@ -34,6 +34,7 @@ const CalendarField = ({ fecha, setFecha }) => {
         if (!data) return
         // console.log(response?.calendar)
         setEnabledDays(response?.weekdays)
+        console.log(response?.weekdays)
         setDisabledDates([...disabledDates, new Date(response?.calendar.disable)])
         setEnabledDates([...enabledDates, new Date(response?.calendar.enable)])
     }, [data])
@@ -64,7 +65,7 @@ const CalendarField = ({ fecha, setFecha }) => {
         if (date.selectable) {
             return (
                 // change color of enabled dates with contrast color
-                <div style={{ border: '1px solid var(--color-cyan)', borderRadius: '6px', width: '2em', height: '2em', lineHeight: '2em', color: 'var(---color-cyan)' }}>{date.day}</div>
+                <div style={{ border: '1px solid var(--color-cyan)', borderRadius: '2px', width: '2em', height: '2em', lineHeight: '2em', color: 'var(---color-cyan)' }}>{date.day}</div>
             );
         }
 
@@ -90,7 +91,7 @@ const CalendarField = ({ fecha, setFecha }) => {
                 // disabledDates={disabledDates}
                 dateTemplate={dateTemplate}
                 disabled={loding}
-                maxDate={new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0)}
+                // maxDate={new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0)}
 
             />
             {/* {getFormErrorMessage('fecha')} */}

@@ -4,9 +4,9 @@ import 'primeicons/primeicons.css';
 import Swal from 'sweetalert2'
 import { format } from "@formkit/tempo"
 
-// import { Card } from 'primereact/card';
-// import { Button } from 'primereact/button';
-// import { Dialog } from 'primereact/dialog';
+import { Card } from 'primereact/card';
+import { Button } from 'primereact/button';
+import { Dialog } from 'primereact/dialog';
 
 import NameField from './components/NameField';
 import CedulaField from './components/CedulaField';
@@ -16,28 +16,13 @@ import PersonaField from './components/PersonaField';
 import CalendarField from './components/CalendarField';
 import HoraField from './components/HoraField';
 import NotesField from './components/NotesField';
-// import useFetch from '../../utils/useFetch';
 import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
 import axios from 'axios';
 
-import * as BtnPrime from "primereact/button";
-const { Button } = BtnPrime;
-export { Button };
-
-import * as CardPrime from "primereact/card";
-const { Card } = CardPrime;
-export { Card };
-
-import * as DlgPrime from "primereact/dialog";
-const { Dialog } = DlgPrime;
-export { Dialog };
-
-
-
 const RegisterForm = () => {
     const defaultSelectedHour = 4
-    const [horas, setHoras] = useState([])
+    const [horas, setHoras] = useState(['08:00', '08:30', '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00', '12:30'])
 
     // const [dataHours, loading, error, fetch] = useFetch()
 
@@ -77,7 +62,10 @@ const RegisterForm = () => {
 
     const getHoras = () =>
         axios.get(API_METHODS.configs.getConfigs.url)
-            .then(res => setHoras(res.data[0].data.horas))
+            .then(res => {
+                console.log(res.data[0].data.horas)
+                setHoras(res.data[0].data.horas)
+            })
             .catch(err => console.log(err))
 
     useEffect(() => {

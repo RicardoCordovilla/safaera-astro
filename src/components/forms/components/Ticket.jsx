@@ -31,7 +31,7 @@ const Ticket = ({ data, setShowDialog }) => {
                     })
                         .then((result) => {
                             if (result.isConfirmed) {
-                                window.location.href = '/confirmacion'
+                                window.location.href = 'confirmacion'
                             }
                         })
                 }
