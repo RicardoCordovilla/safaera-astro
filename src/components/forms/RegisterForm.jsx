@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "primereact/resources/themes/viva-dark/theme.css"
+// import "primereact/resources/themes/viva-dark/theme.css"
 import 'primeicons/primeicons.css';
 import Swal from 'sweetalert2'
 import { format } from "@formkit/tempo"
@@ -19,7 +19,7 @@ import NotesField from './components/NotesField';
 import { API_METHODS } from '../../utils/configs';
 import Ticket from './components/Ticket';
 import axios from 'axios';
-// import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
+import "primereact/resources/themes/bootstrap4-dark-blue/theme.css";
 
 const RegisterForm = () => {
     const defaultSelectedHour = 4
