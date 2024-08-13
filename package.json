@@ -17,6 +17,7 @@
     "@types/react-dom": "^18.3.0",
     "astro": "^4.5.12",
     "axios": "^1.6.8",
+    "framer-motion": "^11.3.24",
     "primeicons": "^7.0.0",
     "primereact": "^10.8.2",
     "react": "^18.3.1",
