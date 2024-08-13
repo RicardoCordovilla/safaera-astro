@@ -165,11 +165,11 @@ const RegisterForm = () => {
                     setFecha={setFecha}
                 />
 
-                <HoraField
+                {/* <HoraField
                     hora={hora}
                     setHora={setHora}
                     horas={horas}
-                />
+                /> */}
 
                 <NotesField
                     notes={notes}
@@ -190,7 +190,7 @@ const RegisterForm = () => {
 
 
 
-            <Dialog
+            {/* <Dialog
                 // open={showDialog}
                 visible={showDialog}
                 style={{
@@ -207,7 +207,7 @@ const RegisterForm = () => {
                     data={data}
                     setShowDialog={setShowDialog}
                 />
-            </Dialog>
+            </Dialog> */}
         </div>
 
     )
