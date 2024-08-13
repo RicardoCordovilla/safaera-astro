@@ -127,7 +127,7 @@ const RegisterForm = () => {
                 borderRadius: '1rem', boxShadow: '0 0 1rem 0.5rem rgba(200, 200, 200, 0.5)',
                 marginTop: '1.5em',
                 marginBottom: '4 em',
-                backgroundColor: 'rgba(44, 42, 42, 0.747)',
+                backgroundColor: 'rgb(44, 42, 42)',
                 padding: '2rem',
             }}
 

@@ -12,7 +12,7 @@ export { FloatLabel };
 const NameField = ({ nombre, setNombre }) => {
     return (
         <div className="card flex justify-content-center">
-            <FloatLabel>
+            {/* <FloatLabel> */}
                 <InputText id="nombre"
                     style={{ width: '100%' }}
                     onChange={(e) => { setNombre(e.target.value) }}
@@ -25,7 +25,7 @@ const NameField = ({ nombre, setNombre }) => {
                     required
                 />
                 <label htmlFor="nombre">Nombre y Apellido:</label>
-            </FloatLabel>
+            {/* </FloatLabel> */}
             {/* {getFormErrorMessage('nombre')} */}
         </div>
     )
