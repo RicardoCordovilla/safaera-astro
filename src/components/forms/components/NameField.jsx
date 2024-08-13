@@ -1,9 +1,9 @@
 // import { FloatLabel } from 'primereact/floatlabel'
-// import { InputText } from 'primereact/inputtext'
+import { InputText } from 'primereact/inputtext'
 
-import * as InpTxt from "primereact/inputtext";
-const { InputText } = InpTxt;
-export { InputText };
+// import * as InpTxt from "primereact/inputtext";
+// const { InputText } = InpTxt;
+// export { InputText };
 
 import * as FltLbl from "primereact/floatlabel";
 const { FloatLabel } = FltLbl;
@@ -13,7 +13,7 @@ const NameField = ({ nombre, setNombre }) => {
     return (
         <div className="card flex justify-content-center">
             {/* <FloatLabel> */}
-                {/* <InputText id="nombre"
+                <InputText id="nombre"
                     style={{ width: '100%' }}
                     onChange={(e) => { setNombre(e.target.value) }}
                     value={nombre}
@@ -23,7 +23,7 @@ const NameField = ({ nombre, setNombre }) => {
                     // className={`p-inputtext-lg ${isFormFieldInvalid('nombre') ? 'p-invalid' : ''}`}
                     type='text'
                     required
-                /> */}
+                />
                 <input type="text" />
                 <label htmlFor="nombre">Nombre y Apellido:</label>
             {/* </FloatLabel> */}
