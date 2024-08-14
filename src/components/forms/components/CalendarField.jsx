@@ -58,7 +58,7 @@ const CalendarField = ({ fecha, setFecha }) => {
         if (!date.selectable) {
             return (
                 // <strong style={{ textDecoration: 'line-through', color: '#585858' }}>{date.day}</strong>
-                <div style={{ backgroundColor: '#353535', borderRadius: '50%', width: '2em', height: '2em', lineHeight: '2em', color: '#353535' }} >{date.day}</div>
+                <div style={{ backgroundColor: '#353535', borderRadius: '50%', width: '2em', height: '2em', lineHeight: '2em', color: '#353535' }}>{date.day}</div>
             );
         }
 
